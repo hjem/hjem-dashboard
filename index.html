@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>hjem</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="col-md-8 col-sm-8 fill">
+        <main>
+          <ul id="log" class="list-unstyled">
+            <li>
+              <i class="icon-music"></i> Now playing
+              <div class="card">
+                <img src="http://www.dailyrecords.at/images/The%20Princess%20Album.jpg" width="75" height="75">
+
+                <dl class="dl-horizontal">
+                  <dt>Song</dt>
+                  <dd>All Night</dd>
+                  <dt>Artist</dt>
+                  <dd>Parov Stelar</dd>
+                  <dt>Album</dt>
+                  <dd>The Princess</dd>
+                </dl>
+              </div>
+            </li>
+            <li><i class="icon-lock"></i> Alarm disarmed by Mathias</li>
+            <li><i class="icon-params"></i> Adjusted temperature for the night</li>
+            <li><i class="icon-home"></i> Front door was closed</li>
+            <li><i class="icon-home"></i> Front door was opened</li>
+          </ul>
+        </main>
+
+        <section id="actions">
+          <ul class="list-unstyled">
+            <li><i class="icon-moon"></i> Goodnight</li>
+            <li><i class="icon-briefcase"></i> Off to work</li>
+            <li><i class="icon-open-book"></i> Reading</li>
+          </ul>
+        </section>
+      </div>
+      <aside class="col-md-4 col-sm-4 fill">
+        <ul id="charts" class="list-unstyled">
+          <li class="weather">
+            <h2>74 <span>&deg; F</span></h2>
+            <i class="icon-cloud"></i>
+            <canvas id="chart_weather"></canvas>
+          </li>
+          <li class="electricity">
+            <h2>12 <span>kWh</span></h2>
+            <canvas id="chart_electricity"></canvas>
+            <i class="icon-bulb"></i>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
